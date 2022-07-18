@@ -1,0 +1,17 @@
+System.out.println("Digite o valor do ingresso: ");
+        ingresso = in.nextFloat();
+     System.out.println("Qual a sua idade? ");
+       idade = in.nextInt();
+     System.out.println("Voce é socio ? \n (S) Sim \n (N) Nao ");
+       socio = in.next().charAt(0);
+    if (socio == 'S') {
+      valorpagoSocio = ingresso * 30 / 100;
+      System.out.println("O valor pago para socio é R$" + valorpagoSocio);
+    } else {
+      System.out.println("O valor pago para não socio é R$" + ingresso);
+
+    }
+    if (idade <= 10) {
+      System.out.println("Voce tem menos de 10 anos, não paga entrada ");
+
+    }
